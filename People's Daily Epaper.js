@@ -2,14 +2,14 @@
 	"translatorID": "84bd7e84-c61d-4348-8615-3b56d9ebb848",
 	"label": "People's Daily Epaper",
 	"creator": "jiaojiaodubai",
-	"target": "^http://paper\\.people(\\.com)?\\.cn",
+	"target": "^https://paper\\.people(\\.com)?\\.cn",
 	"minVersion": "5.0",
 	"maxVersion": "",
 	"priority": 100,
 	"inRepository": true,
 	"translatorType": 4,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2024-06-09 13:28:34"
+	"lastUpdated": "2026-08-17 03:02:40"
 }
 
 /*
@@ -263,6 +263,40 @@ var testCases = [
 				"publicationTitle": "新闻战线",
 				"shortTitle": "融媒体时代深挖财经报道的主流价值",
 				"url": "http://paper.people.com.cn/xwzx/html/2021-12/01/content_26016862.htm",
+				"attachments": [
+					{
+						"title": "Snapshot",
+						"mimeType": "text/html"
+					}
+				],
+				"tags": [],
+				"notes": [],
+				"seeAlso": []
+			}
+		]
+	},
+	{
+		"type": "web",
+		"url": "https://paper.people.com.cn/mszk/html/2023-12/18/content_26034010.htm",
+		"items": [
+			{
+				"itemType": "journalArticle",
+				"title": "生态环境监管不能走过场",
+				"creators": [
+					{
+						"firstName": "",
+						"lastName": "严碧华",
+						"creatorType": "author",
+						"fieldMode": 1
+					}
+				],
+				"date": "2023-12-18",
+				"language": "zh-CN",
+				"libraryCatalog": "人民日报图文数据库",
+				"pages": "1",
+				"place": "北京",
+				"publicationTitle": "民生周刊",
+				"url": "https://paper.people.com.cn/mszk/html/2023-12/18/content_26034010.htm",
 				"attachments": [
 					{
 						"title": "Snapshot",

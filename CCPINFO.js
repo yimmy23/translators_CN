@@ -9,7 +9,7 @@
 	"inRepository": true,
 	"translatorType": 12,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2025-05-27 07:40:48"
+	"lastUpdated": "2026-08-17 02:53:21"
 }
 
 /*
@@ -175,6 +175,8 @@ async function scrape(doc, url = doc.location.href) {
 				const country = tryMatch(name, /^[[(（](.+?)[\])）]/, 1);
 				const creator = ZU.cleanAuthor(name.replace(/^[[(（].+?[\])）]/, ''), creatorType);
 				if (/\p{Unified_Ideograph}/u.test(creator.lastName)) {
+					creator.lastName = `${creator.lastName}${creator.firstName}`;
+					creator.firstName = '';
 					creator.fieldMode = 1;
 				}
 				newItem.creators.push(JSON.parse(JSON.stringify(creator)));
